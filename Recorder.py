@@ -53,7 +53,7 @@ class VoiceRecorder:
         exists = True
         i = 1
 
-        sound_file = wave.open(f"recording.mp3","wb")
+        sound_file = wave.open(f"recording.wav","wb")
         sound_file.setnchannels(1)
         sound_file.setsampwidth(audio.get_sample_size(pyaudio.paInt16))
         sound_file.setframerate(44100)
